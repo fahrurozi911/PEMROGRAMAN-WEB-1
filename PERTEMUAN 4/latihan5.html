@@ -1,0 +1,25 @@
+<html>
+    <head><title>Latihan 5 - Ahmad Fahru Rozi</title></head>
+    <script>
+        function describe(v){
+            const tipe = typeof v;
+            return `value=${String(v)} | type=${tipe}`;
+        }
+
+        console.log(describe(9007199254740993n));
+        console.log(describe(3.14));
+        console.log(describe('JS'));
+        console.log(describe(false));
+        console.log(describe(null));
+        console.log(describe(undefined));
+
+        const user = { profile: { name: 'ana', age : 21}};
+        const loggedIn = true;
+
+        const nama = user?.profile?.name ?? 'guest';
+        const izin = loggedIn && "akses-diberikan";
+        const kelas = (user?.profile?.age >= 18) ? 'Dewasa' : 'Remaja';
+
+        console.log(nama, izin, kelas);
+    </script>
+</html>

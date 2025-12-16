@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+<title>Ahmad Fahru Rozi - Latihan 3</title>
+<style>
+    body { font-family: Arial; background:#f2f6ff; padding:20px; }
+    .container { background:white; padding:20px; max-width:600px; margin:auto;
+                 border-radius:10px; box-shadow:0 0 10px #0002; }
+    h2 { margin-top:0; }
+    .soal { margin-bottom:20px; }
+    .hasil { background:#f0f4ff; padding:15px; border-radius:8px; margin-top:20px; display:none; }
+    button { padding:10px 16px; border:0; background:#2563eb; color:white; border-radius:6px; cursor:pointer; }
+    button:hover { background:#1d4ed8; }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>JAWAB KUIS BERIKUT</h2>
+
+    <div class="soal">
+        <p><strong>1. Ibu kota Indonesia adalah?</strong></p>
+        <label><input type="radio" name="s1" value="a"> Bandung</label><br>
+        <label><input type="radio" name="s1" value="b"> Jakarta</label><br>
+        <label><input type="radio" name="s1" value="c"> Surabaya</label><br>
+        <label><input type="radio" name="s1" value="d"> Medan</label>
+    </div>
+
+    <div class="soal">
+        <p><strong>2. Berapa hasil 7 × 8?</strong></p>
+        <label><input type="radio" name="s2" value="a"> 54</label><br>
+        <label><input type="radio" name="s2" value="b"> 48</label><br>
+        <label><input type="radio" name="s2" value="c"> 56</label><br>
+        <label><input type="radio" name="s2" value="d"> 64</label>
+    </div>
+
+    <button onclick="cekJawaban()">Submit</button>
+
+    <div id="hasil" class="hasil"></div>
+</div>
+
+<script>
+function cekJawaban() {
+    let score = 0;
+
+    const jawaban = {
+        s1: "b", 
+        s2: "c"  
+    };
+
+    const hasilDiv = document.getElementById("hasil");
+    hasilDiv.style.display = "block";
+
+    let s1 = document.querySelector('input[name="s1"]:checked');
+    let s2 = document.querySelector('input[name="s2"]:checked');
+
+    let html = "<h3>Hasil:</h3>";
+
+    if (!s1 || !s2) {
+        hasilDiv.innerHTML = "<p style='color:red'>Masih ada soal yang belum dijawab!</p>";
+        return;
+    }
+
+    if (s1.value === jawaban.s1) score++;
+    if (s2.value === jawaban.s2) score++;
+
+    html += `<p>Skor Anda: <strong>${score}/2</strong></p>`;
+
+    html += "<ul>";
+    html += `<li>Soal 1: ${s1.value === jawaban.s1 ? "Benar" : "Salah"}</li>`;
+    html += `<li>Soal 2: ${s2.value === jawaban.s2 ? "Benar" : "Salah"}</li>`;
+    html += "</ul>";
+
+    hasilDiv.innerHTML = html;
+}
+</script>
+
+</body>
+</html>
