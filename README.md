@@ -25,24 +25,7 @@ Materi yang dipelajari dan diimplementasikan dalam praktikum ini antara lain:
 - Penerapan CSS dasar untuk tampilan web
 - Pembuatan layout halaman web sederhana
 - Latihan dan studi kasus sesuai modul praktikum
-
----
-
-## Cara Menjalankan Project
-
-1. Clone repository ini ke komputer lokal:
-   ```bash
-   git clone https://github.com/fahrurozi911/PEMROGRAMAN-WEB-1.git
-
-2. Masuk ke folder project.
-
-
-3. Buka file .html menggunakan web browser.
-
-
-4. Apabila terdapat file .php, jalankan menggunakan server lokal seperti XAMPP atau Laragon.
-
-
+- Penerapan materi dasar BOOTSRAP
 
 
 ---
@@ -55,13 +38,11 @@ NIM : 231011401681
 
 Kelas : 05TPLE001
 
-Mata Kuliah : Pemrograman Web I
-
-
 
 ---
 
 Penutup
 
 Repository ini disusun sebagai bentuk pertanggungjawaban akademik atas pelaksanaan praktikum Pemrograman Web I. Diharapkan repository ini dapat memberikan gambaran hasil pembelajaran serta menjadi referensi dasar dalam pengembangan kemampuan pemrograman web.
+
 
