@@ -14,19 +14,6 @@ Pembuatan repository ini bertujuan untuk:
 3. Memudahkan proses evaluasi dan penilaian oleh dosen pengampu.
 4. Menjadi referensi pembelajaran pemrograman web dasar.
 
----
-
-## Struktur Direktori
-
-Berikut adalah struktur direktori dalam repository ini:
-
-/ ├── PERTEMUAN 1 ├── PERTEMUAN 2 ├── PERTEMUAN 3 ├── PERTEMUAN 4 ├── PERTEMUAN 5 ├── PERTEMUAN 6 ├── LAPORAN └── README.md
-
-Keterangan:
-- **PERTEMUAN X**  
-  Berisi file tugas dan latihan praktikum sesuai dengan materi yang dibahas pada setiap pertemuan.
-- **LAPORAN**  
-  Berisi dokumen laporan akhir Praktikum Pemrograman Web I.
 
 ---
 
@@ -77,3 +64,4 @@ Mata Kuliah : Pemrograman Web I
 Penutup
 
 Repository ini disusun sebagai bentuk pertanggungjawaban akademik atas pelaksanaan praktikum Pemrograman Web I. Diharapkan repository ini dapat memberikan gambaran hasil pembelajaran serta menjadi referensi dasar dalam pengembangan kemampuan pemrograman web.
+
